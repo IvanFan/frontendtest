@@ -8,9 +8,9 @@ $.getJSON( "content.json", function( data ) {
   console.log('data received ');
   console.log(data);
   fileContent = data;
-  $('#firstLeveTitle').html( fileContent.title);
+  $('#firstLevelTitle').html( fileContent.title);
   $('#title').html( fileContent.content[0].title);
-  $('#thumbnail').html( fileContent.content[0].title);
+  $('#thumbnail').html( fileContent.content[0].thumbnail);
   $('#description').html( fileContent.content[0].description);
 });
 
@@ -27,7 +27,7 @@ $( "#next" ).click(function() {
 
   }
   $('#title').html( fileContent.content[currentIndex].title);
-  $('#thumbnail').html( fileContent.content[currentIndex].title);
+  $('#thumbnail').html( fileContent.content[currentIndex].thumbnail);
   $('#description').html( fileContent.content[currentIndex].description)
 
 });
